@@ -7,15 +7,11 @@ class analysis:
     def __init__(
             self,
             path,
-            start_year,  
-            end_year,   
             latitude,  
             longitude,  
         ):
         # Definicion de las variables
         self.path = path
-        self.start_year =  start_year
-        self.end_year =  end_year
         self.latitude =  latitude
         self.longitude =  longitude
 
@@ -61,7 +57,13 @@ class analysis:
         """
         # Archivos a leer
         mask = self.files_read()
-        
+        final = xr.DataArray()
+        for link in mask['link'].to_numpy():
+            xr.open_dataset(link)
+
+
+
+
         
 
 
