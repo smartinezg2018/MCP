@@ -39,13 +39,13 @@ class analysis:
                 dict_files['date'].append(date)
                 dict_files['link'].append(link)
         # Creacion del dataframe
-        df_files = pd.DataFrame(dict_files)
-        df_files.set_index(
+        df_files_reference = pd.DataFrame(dict_files)
+        df_files_reference.set_index(
             'date',
             drop=True,
             inplace=True
         )
-        return df_files.sort_index()
+        return df_files_reference.sort_index()
     
     def retrieveData(
             self,
