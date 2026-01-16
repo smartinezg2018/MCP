@@ -1,7 +1,7 @@
 Instrucciones
 
-tener los datos geospaciales dentro de una carpeta llamada data, luego crear un archivo llamado .gitignore
+tener los datos geospaciales dentro de una carpeta llamada reference_data, luego crear un archivo llamado .gitignore
 nombrando los archivos dentro de esta carpeta(*.nc)
 
+luego los datos a medir se guardan en una carpeta nombreada target_data
 
- - pendientes, crear una clase que permita hacer un partial fit de los datos que se usan dentro de x modelo
