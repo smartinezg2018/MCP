@@ -1,0 +1,12 @@
+scikit-learn
+numpy
+xarray
+matplotlib
+pandas
+numpy
+ipykernel
+netcdf4
+h5netcdf
+dask 
+netCDF4 
+bottleneck
